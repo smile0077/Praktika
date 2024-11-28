@@ -1,0 +1,67 @@
+@import "resetCss.css";
+
+.slider-container {
+    position: relative;
+    width: 809px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 809px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    height: 100%;
+    width: 30%;
+    opacity: 0.5;
+    transition: 0.4s;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.prev-button {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.next-button {
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.prev-button:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+    opacity: 1;
+}
+
+.next-button:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+    opacity: 1;
+}
+
+.counter {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
